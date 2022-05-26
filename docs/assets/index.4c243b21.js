@@ -3008,7 +3008,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
- */function ck(n){return Pg(n,.54,.46)}const rH=A({hammingWindow_:ck});/**
+ */function ck(n){return Pg(n,.54,.46)}const oH=A({hammingWindow_:ck});/**
  * @license
  * Copyright 2019 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3053,7 +3053,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
- */function fk(n,t,e,s,o=hk){s==null&&(s=tk(t));const r=pk(n,t,e),i=E(r,o(t));return Ag(i,s)}const iH=A({stft_:fk});/**
+ */function fk(n,t,e,s,o=hk){s==null&&(s=tk(t));const r=pk(n,t,e),i=E(r,o(t));return Ag(i,s)}const rH=A({stft_:fk});/**
  * @license
  * Copyright 2020 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3383,7 +3383,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
- */function eS(n,t,e,s=Le.SUM_BY_NONZERO_WEIGHTS){const o=S(n,"labels","absoluteDifference"),r=S(t,"predictions","absoluteDifference");let i=null;e!=null&&(i=S(e,"weights","absoluteDifference")),xn(o.shape,r.shape,"Error in absoluteDifference: ");const l=de(lt(o,r));return Ns(l,i,s)}const aH=A({absoluteDifference_:eS});function nS(n,t,e,s,o=Le.SUM_BY_NONZERO_WEIGHTS){const r=S(n,"labels","cosineDistance"),i=S(t,"predictions","cosineDistance");let l=null;s!=null&&(l=S(s,"weights","cosineDistance")),xn(r.shape,i.shape,"Error in cosineDistance: ");const a=mt(1),c=lt(a,at(E(r,i),e,!0));return Ns(c,l,o)}const lH=A({cosineDistance_:nS});function sS(n,t,e,s=Le.SUM_BY_NONZERO_WEIGHTS){let o=S(n,"labels","hingeLoss");const r=S(t,"predictions","hingeLoss");let i=null;e!=null&&(i=S(e,"weights","hingeLoss")),xn(o.shape,r.shape,"Error in hingeLoss: ");const l=mt(1);o=lt(E(mt(2),o),l);const a=ss(lt(l,E(o,r)));return Ns(a,i,s)}const cH=A({hingeLoss_:sS});/**
+ */function eS(n,t,e,s=Le.SUM_BY_NONZERO_WEIGHTS){const o=S(n,"labels","absoluteDifference"),r=S(t,"predictions","absoluteDifference");let i=null;e!=null&&(i=S(e,"weights","absoluteDifference")),xn(o.shape,r.shape,"Error in absoluteDifference: ");const l=de(lt(o,r));return Ns(l,i,s)}const iH=A({absoluteDifference_:eS});function nS(n,t,e,s,o=Le.SUM_BY_NONZERO_WEIGHTS){const r=S(n,"labels","cosineDistance"),i=S(t,"predictions","cosineDistance");let l=null;s!=null&&(l=S(s,"weights","cosineDistance")),xn(r.shape,i.shape,"Error in cosineDistance: ");const a=mt(1),c=lt(a,at(E(r,i),e,!0));return Ns(c,l,o)}const aH=A({cosineDistance_:nS});function sS(n,t,e,s=Le.SUM_BY_NONZERO_WEIGHTS){let o=S(n,"labels","hingeLoss");const r=S(t,"predictions","hingeLoss");let i=null;e!=null&&(i=S(e,"weights","hingeLoss")),xn(o.shape,r.shape,"Error in hingeLoss: ");const l=mt(1);o=lt(E(mt(2),o),l);const a=ss(lt(l,E(o,r)));return Ns(a,i,s)}const lH=A({hingeLoss_:sS});/**
  * @license
  * Copyright 2020 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3398,7 +3398,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
- */function oS(n,t,e,s=1,o=Le.SUM_BY_NONZERO_WEIGHTS){const r=S(n,"labels","huberLoss"),i=S(t,"predictions","huberLoss");let l=null;e!=null&&(l=S(e,"weights","huberLoss")),xn(r.shape,i.shape,"Error in huberLoss: ");const a=mt(s),c=de(lt(i,r)),u=Ul(c,a),h=lt(c,u),d=X(E(mt(.5),zt(u)),E(a,h));return Ns(d,l,o)}const uH=A({huberLoss_:oS});/**
+ */function oS(n,t,e,s=1,o=Le.SUM_BY_NONZERO_WEIGHTS){const r=S(n,"labels","huberLoss"),i=S(t,"predictions","huberLoss");let l=null;e!=null&&(l=S(e,"weights","huberLoss")),xn(r.shape,i.shape,"Error in huberLoss: ");const a=mt(s),c=de(lt(i,r)),u=Ul(c,a),h=lt(c,u),d=X(E(mt(.5),zt(u)),E(a,h));return Ns(d,l,o)}const cH=A({huberLoss_:oS});/**
  * @license
  * Copyright 2020 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3413,7 +3413,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
- */function rS(n,t,e,s=1e-7,o=Le.SUM_BY_NONZERO_WEIGHTS){const r=S(n,"labels","logLoss"),i=S(t,"predictions","logLoss");let l=null;e!=null&&(l=S(e,"weights","logLoss")),xn(r.shape,i.shape,"Error in logLoss: ");const a=mt(1),c=mt(s),u=Zt(E(r,mn(X(i,c)))),h=E(lt(a,r),mn(X(lt(a,i),c))),d=lt(u,h);return Ns(d,l,o)}const hH=A({logLoss_:rS});/**
+ */function rS(n,t,e,s=1e-7,o=Le.SUM_BY_NONZERO_WEIGHTS){const r=S(n,"labels","logLoss"),i=S(t,"predictions","logLoss");let l=null;e!=null&&(l=S(e,"weights","logLoss")),xn(r.shape,i.shape,"Error in logLoss: ");const a=mt(1),c=mt(s),u=Zt(E(r,mn(X(i,c)))),h=E(lt(a,r),mn(X(lt(a,i),c))),d=lt(u,h);return Ns(d,l,o)}const uH=A({logLoss_:rS});/**
  * @license
  * Copyright 2020 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3428,7 +3428,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
- */function iS(n,t,e,s=Le.SUM_BY_NONZERO_WEIGHTS){const o=S(n,"labels","meanSquaredError"),r=S(t,"predictions","meanSquaredError");let i=null;e!=null&&(i=S(e,"weights","meanSquaredError")),xn(o.shape,r.shape,"Error in meanSquaredError: ");const l=Fg(o,r);return Ns(l,i,s)}const dH=A({meanSquaredError_:iS});/**
+ */function iS(n,t,e,s=Le.SUM_BY_NONZERO_WEIGHTS){const o=S(n,"labels","meanSquaredError"),r=S(t,"predictions","meanSquaredError");let i=null;e!=null&&(i=S(e,"weights","meanSquaredError")),xn(o.shape,r.shape,"Error in meanSquaredError: ");const l=Fg(o,r);return Ns(l,i,s)}const hH=A({meanSquaredError_:iS});/**
  * @license
  * Copyright 2020 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3443,7 +3443,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
- */function aS(n,t){const e=S(n,"labels","sigmoidCrossEntropyWithLogits"),s=S(t,"logits","sigmoidCrossEntropyWithLogits");xn(e.shape,s.shape,"Error in sigmoidCrossEntropyWithLogits: ");const o=ss(s),r=E(s,e),i=Lh(fn(Zt(de(s))));return X(lt(o,r),i)}function lS(n,t,e,s=0,o=Le.SUM_BY_NONZERO_WEIGHTS){let r=S(n,"multiClassLabels","sigmoidCrossEntropy");const i=S(t,"logits","sigmoidCrossEntropy");let l=null;if(e!=null&&(l=S(e,"weights","sigmoidCrossEntropy")),xn(r.shape,i.shape,"Error in sigmoidCrossEntropy: "),s>0){const c=mt(s),u=mt(1),h=mt(.5);r=X(E(r,lt(u,c)),E(h,c))}const a=aS(r,i);return Ns(a,l,o)}const pH=A({sigmoidCrossEntropy_:lS});/**
+ */function aS(n,t){const e=S(n,"labels","sigmoidCrossEntropyWithLogits"),s=S(t,"logits","sigmoidCrossEntropyWithLogits");xn(e.shape,s.shape,"Error in sigmoidCrossEntropyWithLogits: ");const o=ss(s),r=E(s,e),i=Lh(fn(Zt(de(s))));return X(lt(o,r),i)}function lS(n,t,e,s=0,o=Le.SUM_BY_NONZERO_WEIGHTS){let r=S(n,"multiClassLabels","sigmoidCrossEntropy");const i=S(t,"logits","sigmoidCrossEntropy");let l=null;if(e!=null&&(l=S(e,"weights","sigmoidCrossEntropy")),xn(r.shape,i.shape,"Error in sigmoidCrossEntropy: "),s>0){const c=mt(s),u=mt(1),h=mt(.5);r=X(E(r,lt(u,c)),E(h,c))}const a=aS(r,i);return Ns(a,l,o)}const dH=A({sigmoidCrossEntropy_:lS});/**
  * @license
  * Copyright 2020 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3458,7 +3458,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
- */function cS(n,t,e=-1){if(e===-1&&(e=t.rank-1),e!==t.rank-1)throw Error(`Softmax cross entropy along a non-last dimension is not yet supported. Labels / logits was rank ${t.rank} and dim was ${e}`);return to((o,r,i)=>{const a=dg(r,[e],!0),c=lt(et(r,"float32"),a);i([o,c]);const u=Zt(E(c,o));return{value:at(u,[e]),gradFunc:(p,f)=>{const[m,g]=f,x=ne(p.shape,[e]);return[E(O(p,x),lt(et(m,"float32"),fn(g))),E(O(p,x),lt(fn(g),et(m,"float32")))]}}})(n,t)}function uS(n,t,e,s=0,o=Le.SUM_BY_NONZERO_WEIGHTS){let r=S(n,"onehotLabels","softmaxCrossEntropy");const i=S(t,"logits","softmaxCrossEntropy");let l=null;if(e!=null&&(l=S(e,"weights","softmaxCrossEntropy")),xn(r.shape,i.shape,"Error in softmaxCrossEntropy: "),s>0){const c=mt(s),u=mt(1),h=mt(r.shape[1]);r=X(E(r,lt(u,c)),ut(c,h))}const a=cS(r,i);return Ns(a,l,o)}const fH=A({softmaxCrossEntropy_:uS});/**
+ */function cS(n,t,e=-1){if(e===-1&&(e=t.rank-1),e!==t.rank-1)throw Error(`Softmax cross entropy along a non-last dimension is not yet supported. Labels / logits was rank ${t.rank} and dim was ${e}`);return to((o,r,i)=>{const a=dg(r,[e],!0),c=lt(et(r,"float32"),a);i([o,c]);const u=Zt(E(c,o));return{value:at(u,[e]),gradFunc:(p,f)=>{const[m,g]=f,x=ne(p.shape,[e]);return[E(O(p,x),lt(et(m,"float32"),fn(g))),E(O(p,x),lt(fn(g),et(m,"float32")))]}}})(n,t)}function uS(n,t,e,s=0,o=Le.SUM_BY_NONZERO_WEIGHTS){let r=S(n,"onehotLabels","softmaxCrossEntropy");const i=S(t,"logits","softmaxCrossEntropy");let l=null;if(e!=null&&(l=S(e,"weights","softmaxCrossEntropy")),xn(r.shape,i.shape,"Error in softmaxCrossEntropy: "),s>0){const c=mt(s),u=mt(1),h=mt(r.shape[1]);r=X(E(r,lt(u,c)),ut(c,h))}const a=cS(r,i);return Ns(a,l,o)}const pH=A({softmaxCrossEntropy_:uS});/**
  * @license
  * Copyright 2021 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3474,7 +3474,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * limitations under the License.
  * =============================================================================
  */function hS(n,t,e,s){const o=S(n,"indices","sparseFillEmptyRows","int32"),r=S(t,"values","sparseFillEmptyRows"),i=S(e,"denseShape","sparseFillEmptyRows","int32"),l=S(s,"defaultValue","sparseFillEmptyRows",r.dtype);if(o.rank!==2)throw new Error(`Indices should be Tensor2D but received shape
-        ${o.shape}`);if(r.rank!==1)throw new Error(`Values should be Tensor1D but received shape ${r.shape}`);if(i.rank!==1)throw new Error(`Dense shape should be Tensor1D but received shape ${i.shape}`);if(l.rank!==0)throw new Error(`Default value should be a scalar but received shape ${l.shape}`);const a={indices:o,values:r,denseShape:i,defaultValue:l},c=F.runKernel(oh,a);return{outputIndices:c[0],outputValues:c[1],emptyRowIndicator:c[2],reverseIndexMap:c[3]}}const mH=A({sparseFillEmptyRows_:hS});/**
+        ${o.shape}`);if(r.rank!==1)throw new Error(`Values should be Tensor1D but received shape ${r.shape}`);if(i.rank!==1)throw new Error(`Dense shape should be Tensor1D but received shape ${i.shape}`);if(l.rank!==0)throw new Error(`Default value should be a scalar but received shape ${l.shape}`);const a={indices:o,values:r,denseShape:i,defaultValue:l},c=F.runKernel(oh,a);return{outputIndices:c[0],outputValues:c[1],emptyRowIndicator:c[2],reverseIndexMap:c[3]}}const fH=A({sparseFillEmptyRows_:hS});/**
  * @license
  * Copyright 2021 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3490,7 +3490,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * limitations under the License.
  * =============================================================================
  */function dS(n,t,e){const s=S(n,"inputIndices","sparseReshape","int32"),o=S(t,"inputShape","sparseReshape","int32"),r=S(e,"newShape","sparseReshape","int32");if(s.rank!==2)throw new Error(`Input indices should be Tensor2D but received shape
-        ${s.shape}`);if(o.rank!==1)throw new Error(`Input shape should be Tensor1D but received shape ${o.shape}`);if(r.rank!==1)throw new Error(`New shape should be Tensor1D but received shape ${r.shape}`);const i={inputIndices:s,inputShape:o,newShape:r},l=F.runKernel(rh,i);return{outputIndices:l[0],outputShape:l[1]}}const gH=A({sparseReshape_:dS});/**
+        ${s.shape}`);if(o.rank!==1)throw new Error(`Input shape should be Tensor1D but received shape ${o.shape}`);if(r.rank!==1)throw new Error(`New shape should be Tensor1D but received shape ${r.shape}`);const i={inputIndices:s,inputShape:o,newShape:r},l=F.runKernel(rh,i);return{outputIndices:l[0],outputShape:l[1]}}const mH=A({sparseReshape_:dS});/**
  * @license
  * Copyright 2021 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3507,7 +3507,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * =============================================================================
  */function pS(n,t,e){const s=S(n,"data","sparseSegmentMean"),o=S(t,"indices","sparseSegmentMean","int32"),r=S(e,"segmentIds","sparseSegmentMean","int32");if(s.rank<1)throw new Error("Data should be at least 1 dimensional but received scalar");if(o.rank!==1)throw new Error(`Indices should be Tensor1D but received shape
           ${o.shape}`);if(r.rank!==1)throw new Error(`Segment ids should be Tensor1D but received shape
-          ${r.shape}`);const i={data:s,indices:o,segmentIds:r};return F.runKernel(ih,i)}const xH=A({sparseSegmentMean_:pS});/**
+          ${r.shape}`);const i={data:s,indices:o,segmentIds:r};return F.runKernel(ih,i)}const gH=A({sparseSegmentMean_:pS});/**
  * @license
  * Copyright 2021 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3524,7 +3524,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * =============================================================================
  */function fS(n,t,e){const s=S(n,"data","sparseSegmentSum"),o=S(t,"indices","sparseSegmentSum","int32"),r=S(e,"segmentIds","sparseSegmentSum","int32");if(s.rank<1)throw new Error("Data should be at least 1 dimensional but received scalar");if(o.rank!==1)throw new Error(`Indices should be Tensor1D but received shape
          ${o.shape}`);if(r.rank!==1)throw new Error(`Segment ids should be Tensor1D but received shape
-         ${r.shape}`);const i={data:s,indices:o,segmentIds:r};return F.runKernel(ah,i)}const bH=A({sparseSegmentSum_:fS});/**
+         ${r.shape}`);const i={data:s,indices:o,segmentIds:r};return F.runKernel(ah,i)}const xH=A({sparseSegmentSum_:fS});/**
  * @license
  * Copyright 2021 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3539,7 +3539,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
- */function mS(n,t,e,s,o,r,i,l){const a=S(n,"data","stringNGrams","string");if(a.dtype!=="string")throw new Error("Data must be of datatype string");if(a.shape.length!==1)throw new Error(`Data must be a vector, saw: ${a.shape}`);const c=S(t,"dataSplits","stringNGrams");if(c.dtype!=="int32")throw new Error("Data splits must be of datatype int32");const u={separator:e,nGramWidths:s,leftPad:o,rightPad:r,padWidth:i,preserveShortSequences:l},h={data:a,dataSplits:c},d=F.runKernel(uh,h,u);return{nGrams:d[0],nGramsSplits:d[1]}}const yH=A({stringNGrams_:mS});/**
+ */function mS(n,t,e,s,o,r,i,l){const a=S(n,"data","stringNGrams","string");if(a.dtype!=="string")throw new Error("Data must be of datatype string");if(a.shape.length!==1)throw new Error(`Data must be a vector, saw: ${a.shape}`);const c=S(t,"dataSplits","stringNGrams");if(c.dtype!=="int32")throw new Error("Data splits must be of datatype int32");const u={separator:e,nGramWidths:s,leftPad:o,rightPad:r,padWidth:i,preserveShortSequences:l},h={data:a,dataSplits:c},d=F.runKernel(uh,h,u);return{nGrams:d[0],nGramsSplits:d[1]}}const bH=A({stringNGrams_:mS});/**
  * @license
  * Copyright 2021 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3554,7 +3554,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
- */function gS(n,t,e=!0){const s=S(n,"input","stringSplit","string"),o=S(t,"delimiter","stringSplit","string");if(s.rank!==1)throw new Error(`Input should be Tensor1D but received shape ${s.shape}`);if(o.rank!==0)throw new Error(`Delimiter should be a scalar but received shape ${o.shape}`);const r={skipEmpty:e},i={input:s,delimiter:o},l=F.runKernel(hh,i,r);return{indices:l[0],values:l[1],shape:l[2]}}const wH=A({stringSplit_:gS});/**
+ */function gS(n,t,e=!0){const s=S(n,"input","stringSplit","string"),o=S(t,"delimiter","stringSplit","string");if(s.rank!==1)throw new Error(`Input should be Tensor1D but received shape ${s.shape}`);if(o.rank!==0)throw new Error(`Delimiter should be a scalar but received shape ${o.shape}`);const r={skipEmpty:e},i={input:s,delimiter:o},l=F.runKernel(hh,i,r);return{indices:l[0],values:l[1],shape:l[2]}}const yH=A({stringSplit_:gS});/**
  * @license
  * Copyright 2021 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -3569,7 +3569,7 @@ function Ty(n,t){return t.forEach(function(e){e&&typeof e!="string"&&!Array.isAr
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
- */function xS(n,t){const e=S(n,"input","stringToHashBucketFast","string"),s={numBuckets:t};if(t<=0)throw new Error("Number of buckets must be at least 1");const o={input:e};return F.runKernel(dh,o,s)}const $H=A({stringToHashBucketFast_:xS});/**
+ */function xS(n,t){const e=S(n,"input","stringToHashBucketFast","string"),s={numBuckets:t};if(t<=0)throw new Error("Number of buckets must be at least 1");const o={input:e};return F.runKernel(dh,o,s)}const wH=A({stringToHashBucketFast_:xS});/**
  * @license
  * Copyright 2020 Google LLC. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -19666,4 +19666,4 @@ return a / b;`,cW=`
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * =============================================================================
- */const Aa=document.getElementById("valorACalcular"),vu=document.getElementById("resultado"),tH=document.getElementById("mostrarVisor");let Cy;const eH=tfvis.visor().surface({name:"Estado del entrenamiento del modelo",tab:"Entrenamiento"}),nH=n=>{const t=[];for(let e=0;e<n.length;e++){const s=2*n[e]+3;t.push(s)}return t},sH=async()=>{vu.innerHTML="El modelo se esta entrenando...";const n=[-1,0,1,2,3,4],t=nH(n),e=Hs(n,[6,1]),s=Hs(t,[6,1]),o=oE();o.add(xE({units:1,inputShape:[1]})),o.compile({loss:"meanSquaredError",optimizer:"sgd",metrics:["accuracy"]}),await o.fit(e,s,{epochs:250,callbacks:[tfvis.show.fitCallbacks(eH,["loss","acc"],{name:"Entrenamiento"}),{onEpochEnd:async(r,i)=>{console.log("Epoch:"+r+" Loss:"+i.loss)}}]}),Aa.disabled=!1,Aa.focus(),Cy=o,vu.innerHTML="Modelo entrenado, listo para usar"};document.addEventListener("DOMContentLoaded",()=>{sH(),Aa.addEventListener("keyup",n=>{if(n.keyCode===13){n.preventDefault();const t=parseInt(Aa.value),s=Cy.predict(Hs([t],[1,1])).dataSync();oH(t,s[0]),vu.innerHTML=`El resultado aproximado para Y es de: ${s}`}}),tH.addEventListener("click",()=>{tfvis.visor().toggle()})});const oH=(n,t)=>{const e=[{x:[n],y:[t],mode:"markers"}],s={xaxis:{range:[Math.abs(n),n],title:"Valores de X"},yaxis:{range:[Math.abs(t),t],title:"Valores de Y"}};Plotly.newPlot("myPlot",e,s)};
+ */const Aa=document.getElementById("valorACalcular"),vu=document.getElementById("resultado"),tH=document.getElementById("mostrarVisor");let Cy;const eH=n=>{const t=[];for(let e=0;e<n.length;e++){const s=2*n[e]+3;t.push(s)}return t},nH=async()=>{vu.innerHTML="El modelo se esta entrenando...";const n=[-1,0,1,2,3,4],t=eH(n),e=Hs(n,[6,1]),s=Hs(t,[6,1]),o=oE();o.add(xE({units:1,inputShape:[1]})),o.compile({loss:"meanSquaredError",optimizer:"sgd",metrics:["accuracy"]}),await o.fit(e,s,{epochs:250,callbacks:[{onEpochEnd:async(r,i)=>{console.log("Epoch:"+r+" Loss:"+i.loss)}}]}),Aa.disabled=!1,Aa.focus(),Cy=o,vu.innerHTML="Modelo entrenado, listo para usar"};document.addEventListener("DOMContentLoaded",()=>{nH(),Aa.addEventListener("keyup",n=>{if(n.keyCode===13){n.preventDefault();const t=parseInt(Aa.value),s=Cy.predict(Hs([t],[1,1])).dataSync();sH(t,s[0]),vu.innerHTML=`El resultado aproximado para Y es de: ${s}`}}),tH.addEventListener("click",()=>{tfvis.visor().toggle()})});const sH=(n,t)=>{const e=[{x:[n],y:[t],mode:"markers"}],s={xaxis:{range:[Math.abs(n),n],title:"Valores de X"},yaxis:{range:[Math.abs(t),t],title:"Valores de Y"}};Plotly.newPlot("myPlot",e,s)};

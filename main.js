@@ -5,10 +5,10 @@ const mostrarVisor = document.getElementById('mostrarVisor');
 let modeloEntrenado;
 
 // se establece la constante para el visor
-const surface = tfvis.visor().surface({
-  name: 'Estado del entrenamiento del modelo',
-  tab: 'Entrenamiento',
-});
+// const surface = tfvis.visor().surface({
+//   name: 'Estado del entrenamiento del modelo',
+//   tab: 'Entrenamiento',
+// });
 // funcion para calcular los valores de Y
 const calcularValoresY = (paramValoresX) => {
   const arrayResultadosY = [];
@@ -50,9 +50,9 @@ const funcionLineal = async () => {
   await model.fit(xs, ys, {
     epochs: 250,
     callbacks: [
-      tfvis.show.fitCallbacks(surface, ['loss', 'acc'], {
-        name: 'Entrenamiento',
-      }),
+      // tfvis.show.fitCallbacks(surface, ['loss', 'acc'], {
+      //   name: 'Entrenamiento',
+      // }),
       {
         onEpochEnd: async (epoch, logs) => {
           console.log('Epoch:' + epoch + ' Loss:' + logs.loss);
