@@ -48,7 +48,7 @@ const funcionLineal = async () => {
 
   // se entrena el modelo
   await model.fit(xs, ys, {
-    epochs: 250,
+    epochs: 350,
     callbacks: [
       // tfvis.show.fitCallbacks(surface, ['loss', 'acc'], {
       //   name: 'Entrenamiento',
